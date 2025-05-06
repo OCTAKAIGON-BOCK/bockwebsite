@@ -1,0 +1,411 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --bodyBg:#303841;
+    --formBg:#343F4B;
+    --textColor:#fff;
+    --primaryColor:#0076A3;
+    --paraColor:#5e6c79;
+    --paraColor:#74828f;
+}
+
+body{
+    font-family: 'Roboto Serif', serif;
+    color: var(--textColor);
+    background: var(--bodyBg);
+    padding-bottom: 5em;
+}
+
+/* .imgcontainer {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+} */
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.sectionHeader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--primaryColor);
+    margin-bottom: .5em;
+}
+
+.heading,.sub-heading{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 2.5em;
+}
+
+.sub-heading{
+    text-align: left;
+}
+
+.contactForm{
+    display: grid;
+    gap: 3em;
+}
+
+form{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.para{
+    color: var(--paraColor);
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.para2{
+    text-align: left;
+}
+
+.input{
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9rem;
+    padding: 1em;
+    outline: none;
+    background-color: var(--formBg);
+    color: var(--paraColor);
+    border-radius: 10px;
+    border: 1px solid rgb(53, 53, 53);
+    margin-bottom: 1em;
+}
+
+.input:focus{
+    border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--textColor);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.map-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.mapBg{
+    position: absolute;
+    background-color: var(--primaryColor);
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon{
+    font-size: 2rem;
+    color: var(--primaryColor);
+    width: 70px;
+}
+
+@media screen and (min-width:800px) {
+    section{
+        max-width: 1100px;
+    }
+    .contactForm{
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .contactMethod{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.container_aboutus {
+    position: relative;
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 72vh;
+}
+
+.container_aboutus .card_aboutus {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.container_aboutus .card_aboutus:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container_aboutus .card_aboutus .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.container_aboutus .card_aboutus .circle .cardtitle {
+    color: #fff;
+    font-size: 1.7em;
+    padding: 40px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container_aboutus .card_aboutus .content_aboutus {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    page-break-after: 20px;
+    text-align: center;
+}
+
+.container_aboutus .card_aboutus .content_aboutus p {
+    color: #666;
+}
+
+.container_aboutus .card_aboutus .content_aboutus a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container_aboutus .card_aboutus:nth-child(1) .circle,
+.container_aboutus .card_aboutus:nth-child(1) .content_aboutus a {
+    background: #ffaf00;
+}
+
+.container_aboutus .card_aboutus:nth-child(2) .circle,
+.container_aboutus .card_aboutus:nth-child(2) .content_aboutus a {
+    background: #da2268;
+}
+
+.container_aboutus .card_aboutus:nth-child(3) .circle,
+.container_aboutus .card_aboutus:nth-child(3) .content_aboutus a {
+    background: #bb02ff;
+}
+
+@media (max-width: 1150px) {
+    .container_aboutus .card_aboutus {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_aboutus .card_aboutus {
+        margin: 20px 0;
+    }
+
+    .container_aboutus .card_aboutus .circle h2 {
+        font-size: 3em;
+    }
+}
+
+p.cardtext{
+    font-size: 15px;
+}
+
+user-card {
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+    border-radius: 10px;
+    min-width: 260px; 
+    cursor: pointer;
+}
+
+user-card:hover {
+    box-shadow: 0px 10px 30px rgba(0,0,0,.3);
+    transition: 300ms ease;
+}
+
+#center_content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_content {
+    position: relative;
+    width: 64%;
+    height: 100%;
+    float: right;
+}
+
+.about div {
+    height: 150px;
+    width: auto;
+    border-radius: 0.5em;
+    background-color: #121212;
+}
+
+.about div p {
+    font-size: 20px;
+    margin: 20px 20px ;
+}
+
+.subsidariestitle{
+    font-size: 30px;
+}
+
+.subsidariesdetails{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.subsidiaries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Optional: Add gap between grid cells */
+}
+
+.subsidariestitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subsidariessub {
+    margin-bottom: 20px;
+}
+
+
+.subsidariessub:hover {
+    box-shadow: 0 0 50px 15px #48abe0;
+}
+
+.subsidariesdetails {
+    font-size: 18px;
+}
+
+.subcontainer {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.subsidiaries:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Add these media queries to your existing CSS */
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .container_aboutus .card_aboutus {
+        width: 90%;
+    }
+
+    .contactMethod {
+        flex-direction: column
+    }
+
+    .method {
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional media queries for even smaller screens if needed */
+@media screen and (max-width: 480px) {
+    .container_aboutus .card_aboutus {
+        width: 100%;
+    }
+}
+
+/* Add these media queries to your existing CSS */
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .subsidaries {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .subcontainer {
+        height: 100%;
+        width: 100%; /* Make each subsidiary take full width */
+        margin-bottom: 20px; /* Add some spacing between each subsidiary */
+    }
+
+    .about div{
+        height: 180px;
+    }
+    #center_content{
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    
+}

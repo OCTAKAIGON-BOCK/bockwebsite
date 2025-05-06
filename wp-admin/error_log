@@ -1,0 +1,36 @@
+[28-Jul-2024 15:16:50 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:16:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:39 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:40 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:41 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:42 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:43 UTC] PHP Warning:  require_once(/home/bockcoin/public_html/wp-load.php): Failed to open stream: No such file or directory in /home/bockcoin/public_html/wp-admin/admin.php on line 34
+[28-Jul-2024 15:18:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/bockcoin/public_html/wp-load.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bockcoin/public_html/wp-admin/admin.php:34
+Stack trace:
+#0 /home/bockcoin/public_html/wp-admin/index.php(10): require_once()
+#1 {main}
+  thrown in /home/bockcoin/public_html/wp-admin/admin.php on line 34

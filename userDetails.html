@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets_dashboard/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Employee Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard ">
+        <!--<div class="sidebar place-items-center ">
+            <div class="logo"><i class="ri-english-input"></i></div>
+            <div class="sidebar-items">
+                <div class="sidebar-item s-iten-1  place-items-center ">
+                    <i class="ri-layout-grid-line "></i>
+                </div>
+                <div class="sidebar-item s-iten-2 place-items-center">
+                    <i class="ri-sound-module-line"></i>
+                </div>
+                <div class="sidebar-item s-iten-3 place-items-center">
+                    <i class="ri-user-line"></i>
+                </div>
+                <div class="sidebar-item s-iten-4 place-items-center">
+                    <i class="ri-line-chart-line"></i>
+                </div>
+            </div>
+        </div>-->
+        <div class="container d-grid">
+            <section class="main-container">
+                <div class="top-bar margin-b">
+                    <h1 class="title "> Employee Dashboard</h1>
+                    <button class="btn place-items-center">
+                        <i class="ri-menu-3-line open-menu-icon"></i>
+                    </button>
+                </div>
+
+                <div class="task-container d-grid margin-b">
+                    <div class="exam card-1">
+                        <h2 class="exam" style="margin-top: 3.5rem; font-size: 3rem; margin-left: 2rem;">Grade Points :</h2>
+                        <div class="start-testing-container d-flex" style="float: right; margin-top: -6rem; margin-right: 4rem;">
+                            <span style="color: #fff; font-size: 5rem;" id="grade"></span>
+                        </div>
+                    </div>
+                    <div class="task-container-2 d-grid">
+                        <div class="homework card-1">
+                            <i class="ri-checkbox-circle-line check-mark"></i>
+                            <h4 style="margin-top: -1rem; margin-bottom: 8px;">Employee Expenditure</h4>
+                            <p style="font-weight: 800; font-size: 2rem;"> Rs.<span id="eexp"></span></p>
+                        </div>
+                        <div class="reading card-1">
+                            <i class="ri-checkbox-circle-line check-mark"></i>
+                            <h4 style="margin-top: -1rem; margin-bottom: 8px;">Company's Expenditure</h4>
+                            <p style="font-weight: 800; font-size: 2rem;"> Rs.<span id="cexp"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-task-container d-grid margin-b">
+
+                    <div class="language-progress card-2" style="text-align: center;">
+                        <!-- <i class="ri-notification-3-fill bell-icon"></i> -->
+                        <h2 class="margin-b" style="font-size: 4rem;">Attendence</h2>
+                        <p style="font-size: 4rem; color: red; font-weight: 800; margin-top: -2rem;"><span id="attandance"></span>%</p>
+                        <!-- <div class="progress-cover">
+                            <div class="progress"></div>
+                        </div> -->
+                    </div>
+                    <div class="group-info card-2">
+                        <h3>Assigned Tasks</h3>
+                       <p style="font-size: 12px;">Note : Tasks are Seperated by •</p>
+                        <div class="group-homework card-1 d-flex">
+                            <div>
+                                <h4 class="group-homework-title"><span id="task"></span></h4>
+                            </div>
+
+                            <!-- <i class="ri-arrow-right-s-line"></i> -->
+
+                        </div>
+                        <div class="today-lesson d-flex ">
+                        <!-- <div>
+                                <h3>Today's lesson</h3>
+                                <p>Unit 6 - Articles</p>
+                            </div>
+                            <h3>12.00</h3>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="grammer-course d-grid ">
+                   <a href="mailto:founder.bock@gmail.com"><div class="course card-1 d-flex">
+                       <div class="grammer d-flex">
+                            <i class="ri-pencil-fill grammer-icon"></i>
+                            <div>
+                                <h3>Raise an Issue</h3>
+                            </div>
+                        </div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div></a>
+                    <button onclick="logout()">
+                    <div class="course card-1 d-flex">
+                        <div class="dictionary d-flex">
+                            <i class="ri-book-2-line dictionary-icon"></i>
+                            <div>
+                                <h3>Logout</h3>
+                            </div>
+                        </div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div></button>
+                </div>
+            </section>
+            <section class="secondary-container ">
+                
+                <div class="courses-progress">
+                  <p style="font-size: 4rem; text-align: center; margin-bottom: 2rem; margin-top: -2rem;"><span id="name"></span></p>
+                  <div class="course discount card-1 d-flex" style="text-align: center; margin-top: -1rem;">
+                      <div style="text-align: center; margin: 0 2rem;">
+                          <h4><span id="email"></span></h4>
+                      </div>
+                      <!-- <i class="ri-arrow-right-s-line"></i> -->
+                  </div>
+                    <h2 class="progress-title" style="text-align: center; margin-bottom: 1rem;">PERSONAL DETAILS</h2>
+                    <div class="profile d-flex">
+                      <!-- <div class="profile-img-box">
+                          <img src="assets/images/pexels-ali-pazani-2613260.jpg" alt="">
+                      </div> -->
+                      <!-- <h4 class="name"><span id="name"></span></h4> -->
+                  </div>
+                          <!-- <div class="course card-1 d-flex">
+                            <div class="progress-icon progress-bg-1 place-items-center">
+                                <i class="ri-pencil-fill"></i>
+                            </div>
+                            <div>
+                                <h3>Name : <span id="name"></span></h3>
+                            </div>
+                        </div> -->
+                        <!-- <div class="course card-1 d-flex">
+                          <div class="progress-icon progress-bg-1 place-items-center">
+                              <i class="ri-pencil-fill"></i>
+                          </div>
+                          <div>
+                              <h3>Email : <span id="institute"></span></h3>
+                          </div>
+                      </div> -->
+                      <div class="course card-1 d-flex">
+                        <div class="progress-icon progress-bg-1 place-items-center">
+                            <i class="ri-pencil-fill"></i>
+                        </div>
+                        <div>
+                            <h3>Department : </h3><span id="department" style="font-size: 2rem;"></span>
+                        </div>
+                    </div>
+                    <div class="course card-1 d-flex">
+                        <div class="progress-icon progress-bg-1 place-items-center">
+                            <i class="ri-pencil-fill"></i>
+                        </div>
+                        <div>
+                            <h3>Institute : </h3><span id="institute" style="font-size: 2rem;"></span>
+                        </div>
+                    </div>
+                    <div class="course card-1 d-flex">
+                        <div class="progress-icon progress-bg-2 place-items-center">
+                            <i class="ri-book-2-line"></i>
+                        </div>
+                        <div>
+                            <h3>Program : </h3><span id="program" style="font-size: 2rem;"></span>
+                        </div>
+                    </div>
+                    <!-- <div class="course card-1 d-flex">
+                        <div class="progress-icon progress-bg-3 place-items-center">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                        </div>
+                    </div> -->
+
+                </div>
+                <p class="copyright" style="text-align: center;">
+                  &copy; 2024 BOCK. All Rights Reserved <br> <a style="color: blue;">Octakaigon Bock Private Limited</a>
+                </p>
+            </section>
+        </div>
+
+    </div>
+
+
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var username = urlParams.get('username');
+      var password = urlParams.get('password');
+  
+      
+  
+      if (!username || !password || localStorage.getItem('loggedOut')) {
+        // Redirect to login page if username or password is missing
+        localStorage.removeItem('loggedOut');
+        window.location.href = 'login.html';
+      } else {
+        // Make AJAX request to get user details
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://script.google.com/macros/s/AKfycbx9reEhC0zoXR10z04pZfkbApxrILDi6Yx_XbSFeNz-OCEN4n3ELUf0sbJyrzMIQDIHvA/exec?username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password), true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var userDetails = JSON.parse(xhr.responseText);
+            if (!userDetails) {
+              // Redirect to login page if user details are not found
+              window.location.href = 'login.html';
+            } else {
+              // Display user details
+              document.getElementById('name').innerText = userDetails.Name;
+              document.getElementById('email').innerText = userDetails.Email;
+              document.getElementById('program').innerText = userDetails.Program;
+              document.getElementById('department').innerText = userDetails.Department;
+              document.getElementById('institute').innerText = userDetails.Institute;
+              document.getElementById('attandance').innerText = userDetails.Attandance;
+              document.getElementById('grade').innerText = userDetails.Grade_Points;
+              document.getElementById('eexp').innerText = userDetails.Emp_Expense;
+              document.getElementById('cexp').innerText = userDetails.Company_Expense;
+              document.getElementById('task').innerText = userDetails.Assigned_Task;
+            }
+          }
+        };
+        xhr.send();
+      }
+  
+      function logout() {
+        localStorage.setItem('loggedOut', 'true');
+        window.location.href = 'login.html';
+      }
+    </script>
+
+
+
+</body>
+
+</html>

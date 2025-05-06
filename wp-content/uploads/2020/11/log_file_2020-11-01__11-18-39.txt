@@ -1,0 +1,71 @@
+
+---Downloaded files---
+The import files for: App Showcase (NEW!) were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = https://themexriver.com/appilo-theme/app-showcase
+Data file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2020/11/demo-content-import-file_2020-11-01__11-18-39.xml
+Widget file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2020/11/demo-widgets-import-file_2020-11-01__11-18-39.json
+Customizer file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2020/11/demo-customizer-import-file_2020-11-01__11-18-39.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+------
+New AJAX call!
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+---Importing widgets---
+Topapp Blog Sidebar : 
+
+Search - No Title - Imported
+Categories - Category - Imported
+Recent Posts With Thumbnails - Recent Post - Imported
+Tag Cloud - Tags - Imported
+Text - Subscribe - Imported
+Gallery - Gallery - Imported
+
+App Showcase Footer Widget : 
+
+App Showcase About Widget  - No Title - Imported
+Navigation Menu - Useful Links: - Imported
+App Showcase Address Widget - Contact: - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

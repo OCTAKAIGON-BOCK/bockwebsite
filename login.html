@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login to Dashboard</title>
+  <link rel="stylesheet" href="assets_dashboard/css/login.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<style>
+  .nav__logo img {
+  max-width: 250px;
+  filter: brightness(0) invert(1);
+  margin-top: -5rem;
+  margin-bottom: -2rem;
+}
+</style>
+<body>
+  <video src="bg.mp4" autoplay muted loop></video>
+  <form id="loginForm">
+    <header>
+      <div class="nav__logo site-logo">
+        <a href="https://bockbharath.com/"><img src="assets_dashboard/images/Bockmain.svg" alt="Bock"></a>
+      </div>
+      <p style="text-align: center; font-size: 2rem; color: beige; margin-top: -2rem; font-weight: 800;">Login</p>
+    </header>
+    <div class="form_wrapper">
+      <input type="text" id="username" name="username" placeholder="Id" required>
+    </div>
+    <div class="form_wrapper">
+      <input type="password" id="password" name="password" placeholder="Password" required>
+    </div>
+    <div class="form_wrapper">
+      <button type="submit">Login</button>
+    </div>
+    <a href="mailto:founder.bock@gmail.com?subject=Reset%20my%20Password&body=I%20forgot%20my%20password,%20kindly%20reset%20it">Forgot password?</a>
+  </form>
+  <div id="error"></div>
+
+  <script>
+    // Clear input fields on page load
+    window.addEventListener('load', function() {
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Validate input
+      if (!username || !password) {
+        document.getElementById('error').innerText = 'Username and password are required';
+        return;
+      }
+
+      // Make AJAX request to validate login
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://script.google.com/macros/s/AKfycbx9reEhC0zoXR10z04pZfkbApxrILDi6Yx_XbSFeNz-OCEN4n3ELUf0sbJyrzMIQDIHvA/exec', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            if (response.valid) {
+              // Redirect to user details page with hashed password in URL
+              window.location.href = 'userDetails.html?username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password);
+            } else {
+              document.getElementById('error').innerText = 'Invalid username or password';
+            }
+          } else {
+            document.getElementById('error').innerText = 'Error: ' + xhr.statusText;
+          }
+        }
+      };
+      xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password));
+    });
+  </script>
+</body>
+</html>

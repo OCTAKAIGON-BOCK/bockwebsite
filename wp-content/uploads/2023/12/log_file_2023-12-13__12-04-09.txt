@@ -1,0 +1,150 @@
+
+---Downloaded files---
+The import files for: App Showcase (NEW!) were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://bock.co.in
+Data file = /home2/bockcoin/public_html/wp-content/uploads/2023/12/demo-content-import-file_2023-12-13__12-04-09.xml
+Widget file = /home2/bockcoin/public_html/wp-content/uploads/2023/12/demo-widgets-import-file_2023-12-13__12-04-09.json
+Customizer file = /home2/bockcoin/public_html/wp-content/uploads/2023/12/demo-customizer-import-file_2023-12-13__12-04-09.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Default Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+
+Default Left Sidebar : 
+
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Topapp Blog Sidebar : 
+
+Search - No Title - Imported
+Categories - Category - Imported
+Tag Cloud - Tags - Imported
+Text - Subscribe - Imported
+Gallery - Gallery - Imported
+
+app_showcase_footer_widget : Sidebar does not exist in theme (moving widget to Inactive)
+
+aboutwidget_widget - No Title - Site does not support widget
+Navigation Menu - Useful Links: - Imported to Inactive
+appshowcaseaddresswi_widget - Contact: - Site does not support widget
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

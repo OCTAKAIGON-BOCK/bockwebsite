@@ -1,0 +1,46 @@
+
+---Downloaded files---
+The import files for: Appilo Pages were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = https://themexriver.com/appilo-theme/app-showcase
+Data file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2021/12/demo-content-import-file_2021-12-09__08-43-43.xml
+Widget file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2021/12/demo-widgets-import-file_2021-12-09__08-43-43.json
+Customizer file = /home/customer/www/themexriver.com/public_html/appilo-theme/wp-content/uploads/sites/4/2021/12/demo-customizer-import-file_2021-12-09__08-43-43.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Default Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+
+Default Left Sidebar : 
+
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Topapp Blog Sidebar : 
+
+Search - No Title - Widget already exists
+Categories - Category - Widget already exists
+Tag Cloud - Tags - Widget already exists
+Text - Subscribe - Widget already exists
+Gallery - Gallery - Widget already exists
+
+topapp-footer-widget : Sidebar does not exist in theme (moving widget to Inactive)
+
+topappabout_widget - No Title - Site does not support widget
+Navigation Menu - Quick Links - Imported to Inactive
+topappsubscribe_widget - No Title - Site does not support widget
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
